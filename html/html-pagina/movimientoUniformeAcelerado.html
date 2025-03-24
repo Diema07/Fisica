@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento Uniformemente Acelerado</title>
+    <script src="../../js/movimientoUniformeAcelerado.js" defer></script>
+    <link rel="stylesheet" href="../../css/styles2.css">
+    <link rel="stylesheet" href="../../css/styles_MUA.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="menu">
+            <a href="../../index.html"><img src="../../img/matematicas.png" alt="Inicio" style="width: 20px; height: 20px;"></a>
+            <a href="conversionUnidades.html">Conversión Unidades</a>
+            <a href="movimientoUniforme.html">Movimiento Uniforme</a>
+            <a href="movimientoUniformeAcelerado.html">Movimiento Uniforme Acelerado</a>
+            <a href="caidaLibre.html">Caída Libre</a>
+            <a href="vectores.html">Vectores</a>
+    
+        </div>    
+</header>
+
+    <section id="presentacion">
+
+        <form id="datosMUA">
+            <label for="tipoCalculo">¿Qué deseas calcular?</label><br>
+                <select id="tipoCalculo">
+                    <option value="velocidadFinal">Velocidad Final</option>
+                    <option value="distanciaFinal">Distancia Final</option>
+                    <option value="tiempo">Tiempo</option>
+                    <option value="aceleracion">Aceleración</option>
+                    <option value="velocidadInicial">Velocidad Inicial</option>
+                    <option value="distanciaInicial">Distancia Inicial</option>
+                </select>
+        </form><br><br>
+    </section>
+
+
+    <section id="calcularVelocidadFinal" class="input-group" > 
+        <form>
+                <label for="velocidadInicialVF">Velocidad Inicial: </label>
+                <input type="number" id="velocidadInicialVF" required>
+
+                <select id="unidadVelocidadInicialVF">
+                    <option value="m/s">m/s</option>
+                    <option value="km/h">km/h</option>
+                </select><br><br>
+
+                <label for="aceleracionVF">Aceleración: </label>
+                <input type="number" id="aceleracionVF" required>
+                <select id="unidadAceleracionVF">
+                    <option value="m/s2">m/s2</option>
+                    <option value="km/h2">km/h2</option>
+                </select><br><br>
+                
+
+                <label for="tiempoVF">Tiempo: </label>
+                <input type="number" id="tiempoVF" required>
+                <select id="unidadTiempoVF">
+                    <option value="s">s</option>
+                    <option value="h">h</option>
+                </select><br><br>
+        </form>  
+    </section>  
+
+    <section id="calcularDistanciaFinal" class="input-group" >
+        <form >        
+            <label for="distanciaInicialDF">Distancia Inicial: </label>
+            <input type="number" id="distanciaInicialDF" required>
+            <select id="unidadDistanciaInicialVF">
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select><br><br>
+
+            <label for="velocidadInicialDF">Velocidad Inicial: </label>
+            <input type="number" id="velocidadInicialDF" required>
+            <select id="unidadVelocidadInicialDF">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select><br><br>
+
+            <label for="velocidadFinalDF">Velocidad Final: </label>
+            <input type="number" id="velocidadFinalDF" required>
+            <select id="unidadVelocidadFinalDF">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select><br><br>
+
+            <label for="tiempoDF">Tiempo: </label>
+            <input type="number" id="tiempoDF" required>
+            <select id="unidadTiempoDF">
+                <option value="s">s</option>
+                <option value="h">h</option>
+            </select><br><br>
+        </form>
+    </section>
+
+    <section id="calcularTiempo" class="input-group" >
+        <form >
+            <label for="distanciaT">Distancia: </label>
+            <input type="number" id="distanciaT" required>
+            <select id="unidadDistanciaT">
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select><br><br>
+
+            <label for="velocidadInicialT">Velocidad Inicial: </label>
+            <input type="number" id="velocidadInicialT" required>
+            <select id="unidadVelocidadInicialT">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select><br><br>
+
+            <label for="aceleracionT">Aceleración: </label>
+            <input type="number" id="aceleracionT" required>
+            <select id="unidadAceleracionT">
+                <option value="m/s2">m/s2</option>
+                <option value="km/h2">km/h2</option>
+            </select><br><br>
+
+        </form>
+    </section>
+
+        <section id="calcularAceleracion" class="input-group" >
+            <form >
+                <label for="distanciaA">Distancia: </label>
+                <input type="number" id="distanciaA" required>
+                <select id="unidadDistanciaA">
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select><br><br>
+
+                <label for="velocidadInicialA">Velocidad Inicial: </label>
+                <input type="number" id="velocidadInicialA" required>
+                <select id="unidadVelocidadInicialA">
+                    <option value="m/s">m/s</option>
+                    <option value="km/h">km/h</option>
+                </select><br><br>
+
+                <label for="velocidadFinalA">Velocidad Final: </label>
+                <input type="number" id="velocidadFinalA" required>
+                <select id="unidadVelocidadFinalA">
+                    <option value="m/s">m/s</option>
+                    <option value="km/h">km/h</option>
+                </select><br><br>
+
+                <label for="tiempoA">Tiempo: </label>
+                <input type="number" id="tiempoA" required>
+                <select id="unidadTiempoA">
+                    <option value="s">s</option>
+                    <option value="h">h</option>
+                </select><br><br>
+            </form>
+        </section>
+
+        <section id="calcularVelocidadInicial" class="input-group" >
+            <form >  
+                <label for="distanciaInicialVI">Distancia Inicial: </label>
+                <input type="number" id="distanciaInicialVI" required>
+                <select id="unidadDistanciaInicialVI">
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select><br><br>
+
+                <label for="aceleracionVI">Aceleración: </label>
+                <input type="number" id="aceleracionVI" required>
+                <select id="unidadAceleracionVI">
+                    <option value="m/s2">m/s2</option>
+                    <option value="km/h2">km/h2</option>
+                </select><br><br>
+
+                <label for="tiempoVI">Tiempo: </label>
+                <input type="number" id="tiempoVI" required>
+                <select id="unidadTiempoVI">
+                    <option value="s">s</option>
+                    <option value="h">h</option>
+                </select><br><br>
+
+                <label for="velocidadFinalVI">Velocidad Final: </label>
+                <input type="number" id="velocidadFinalVI" required>
+                <select id="unidadVelocidadFinalVI">
+                    <option value="m/s">m/s</option>
+                    <option value="km/h">km/h</option>
+                </select><br><br>
+            </form> 
+        </section>
+
+        <section  id="calcularDistanciaInicial" class="input-group">
+           
+            <form>
+                <label for="aceleracionDI">Aceleración: </label>
+                <input type="number" id="aceleracionDI" required>
+                <select id="unidadAceleracionDI">
+                    <option value="m/s2">m/s2</option>
+                    <option value="km/h2">km/h2</option>
+                </select><br><br>
+
+                <label for="velocidadInicialDI">Velocidad Inicial: </label>
+                <input type="number" id="velocidadInicialDI" required>
+                <select id="unidadVelocidadInicialDI">
+                    <option value="m/s">m/s</option>
+                    <option value="km/h">km/h</option>
+                </select><br><br>
+
+                <label for="tiempoDI">Tiempo: </label>
+                <input type="number" id="tiempoDI" required>
+                <select id="unidadTiempoDI">
+                    <option value="s">s</option>
+                    <option value="h">h</option>
+                </select><br><br>
+
+                <label for="distanciaFinalDI">Distancia Final: </label>
+                <input type="number" id="distanciaFinalDI" required>
+                <select id="unidadDistanciaFinalDI">
+                    <option value="m">m</option>
+                    <option value="km">km</option>
+                </select><br><br>
+                
+            </form>
+        </section>
+    
+        <button type="button" id="calcularBoton">Calcular</button><br>
+        <p id="resultado"></p>  
+  
+
+
+
+    <section id="Comentarios">
+        
+        <h2>Deja tu comentario</h2>
+    
+        <form id="commentForm">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" required><br>
+            
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" rows="4" cols="50" required></textarea><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+         
+    <script src="../js/comentarios.js"></script>
+    <footer>
+        <p>&copy; 2024 Proyecto de Física<br>Diego Arevalo - Andres Ramirez</br></p>
+    </footer>
+</body>
+</html>
+

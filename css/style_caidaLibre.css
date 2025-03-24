@@ -1,0 +1,180 @@
+
+h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+#datosCaidaLibre {
+  
+    padding: 20px;
+    text-align: center;
+    background-color: #22272b ;
+    border-radius: 8px;
+    width: 40%;
+    margin: 80px auto;
+}
+
+#datosCaidaLibre label{
+    color: #ffffff;
+}
+
+
+#datosCaidaLibre select {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #22272b ;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Formulario de cálculos */
+section.input-group {
+    background-color:  #22272b; /*#374248*/
+    padding: 20px;
+    margin: 20px auto;
+    width: 30%;
+   
+    border-radius: 15px;
+}
+
+section.input-group form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section.input-group label {
+    font-size: 16px;
+    color: #ffff;
+}
+
+section.input-group input,
+section.input-group select {
+    background-color: #22272b;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 400px;
+    color: #ffffff;
+}
+
+/* Botón calcular */
+#calcularBoton {
+    font-weight: bold;
+    display: block;
+    width: 20%;
+    padding: 12px;
+    margin: 20px auto;
+    background-color: #52fb18;
+    color: #22272b;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Resultado */
+#resultado {
+    margin-top: 40px;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #22272b;
+    border: 1px solid #ffffff;
+    width: 15%;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Comentarios */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+#commentForm {
+    background-color: #22272b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 500px; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+#commentForm label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+#commentForm input, 
+#commentForm textarea {
+    color: #ffffff;
+    margin-left: 20px;
+    padding: 10px;
+    box-decoration-break:initial;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 90%; 
+    box-sizing: border-box; 
+    background-color: #141517;
+}
+
+#commentForm button {
+    width: 90%; 
+    margin-left: 20px;
+    margin-bottom: 35px;
+    padding: 12px;
+    background-color: #52fb18;
+    color: #22272b;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border-color: #52fb18;
+    outline: none;
+    box-shadow: 0 0 8px 2px #52fb18;
+}
+input[type="number"]:hover, select:hover, textarea:hover {
+    border-color: #52fb18;
+    box-shadow: 0 0 8px 2px #52fb18;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}

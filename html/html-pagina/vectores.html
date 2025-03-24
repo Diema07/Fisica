@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vectores</title>
+    <script src="../../js/vectores.js"></script>
+    <link rel="stylesheet" href="../../css/styles2.css">
+    <link rel="stylesheet" href="../../css/styles_vectores.css">
+
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="menu">
+           
+            <a href="../../index.html"><img src="../../img/matematicas.png" alt="Inicio" style="width: 20px; height: 20px;"></a>
+            <a href="conversionUnidades.html">Conversión Unidades</a>
+            <a href="movimientoUniforme.html">Movimiento Uniforme</a>
+            <a href="movimientoUniformeAcelerado.html">Movimiento Uniforme Acelerado</a>
+            <a href="caidaLibre.html">Caída Libre</a>
+            <a href="vectores.html">Vectores</a>
+    
+        </div>    
+    </header>
+    <br>
+   
+    <section id="presentacion">
+
+        <!-- Suma de Vectores -->
+        <h2>Suma de Vectores</h2>
+        <form id="formSumaVectores">
+            <label for="x1">Componente X1: </label>
+            <input type="number" id="x1" required><br><br>
+            
+            <label for="y1">Componente Y1: </label>
+            <input type="number" id="y1" required><br><br>
+            
+            <label for="x2">Componente X2: </label>
+            <input type="number" id="x2" required><br><br>
+            
+            <label for="y2">Componente Y2: </label>
+            <input type="number" id="y2" required><br><br>
+
+            <button type="button" id="calcularSuma">Calcular Suma</button><br><br>
+
+            <p id="resultadoSuma"></p> <!-- Aquí se mostrará el resultado de la suma -->
+        </form>
+
+        <!-- Conversiones de Coordenadas -->
+        <h2>Conversiones Coordenadas</h2>
+        <!-- Conversiones de polar a cartesianas -->
+        <form id="formConversionesPolar">
+            <h3>Polar a Cartesianas</h3>
+            <label for="r">Magnitud (r): </label>
+            <input type="number" id="r" required><br><br>
+            
+            <label for="angulo">Ángulo (θ en grados): </label>
+            <input type="number" id="angulo" required><br><br>
+
+            <button type="button" id="convertirCartesianas">Convertir a Cartesianas</button><br><br>
+
+            <p id="resultadoConversion"></p> <!-- Aquí se mostrará el resultado de la conversión a cartesianas -->
+        </form>
+
+        <!-- Conversiones de cartesianas a polar -->
+        <form id="formConversionesCartesianas">
+            <h3>Cartesianas a Polar</h3>
+            <label for="x">Componente X: </label>
+            <input type="number" id="x" required><br><br>
+            
+            <label for="y">Componente Y: </label>
+            <input type="number" id="y" required><br><br>
+
+            <button type="button" id="convertirPolar">Convertir a Polar</button><br><br>
+
+            <p id="resultadoConversionPolar"></p> <!-- Aquí se mostrará el resultado de la conversión a polar -->
+        </form>
+
+    </section>
+
+
+    <section id="Comentarios">
+    
+        <h2>Deja tu comentario</h2>
+    
+        <form id="commentForm">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" required><br>
+            
+            <label for="comment">Comentario:</label>
+            <textarea id="comment" rows="4" cols="50" required></textarea><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+         
+    <script src="../js/comentarios.js"></script>
+
+    
+    <footer>
+        <p>&copy; 2024 Proyecto Vectores<br>Diego Arevalo - Andres Ramirez</br></p>
+    </footer>
+</body>
+</html>

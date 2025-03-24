@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <script src="../../js/conversionUnidades.js"></script>
+    <link rel="stylesheet" href="../../css/styles2.css">
+    <link rel="stylesheet" href="../../css/styles_CVU.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="menu">
+            <a href="../../index.html"><img src="../../img/matematicas.png" alt="Inicio" style="width: 20px; height: 20px;"></a>
+            <a href="conversionUnidades.html">Conversión Unidades</a>
+            <a href="movimientoUniforme.html">Movimiento Uniforme</a>
+            <a href="movimientoUniformeAcelerado.html">Movimiento Uniforme Acelerado</a>
+            <a href="caidaLibre.html">Caída Libre</a>
+            <a href="vectores.html">Vectores</a>
+    
+        </div>    
+</header>
+
+    <section id="conversionUnidades">
+        <h2>Convertir Distancia</h2>
+        <form id="convertirDistancia">
+            <label for="valorDistancia">Valor:</label>
+            <input type="number" id="valorDistancia">
+            <select id="unidadOrigenDistancia">
+                <option value="m">m</option>
+                <option value="km">km</option>
+                <option value="cm">cm</option>
+            </select>
+            <p>Convertir:</p>
+            <select id="unidadDestinoDistancia">
+                <option value="m">m</option>
+                <option value="km">km</option>
+                <option value="cm">cm</option>
+            </select>
+            <br><br>
+            <button type="button" id="convertirBotonDistancia">Convertir</button>
+            <p id="resultadoDistanciaDecimal"></p>
+            <p id="resultadoDistanciaCientifica"></p>
+        </form>
+<br>
+        <h2>Convertir Tiempo</h2>
+        <form id="convertirTiempo">
+            <label for="valorTiempo">Valor:</label>
+            <input type="number" id="valorTiempo">
+            <select id="unidadOrigenTiempo">
+                <option value="s">s</option>
+                <option value="mn">min</option>
+                <option value="h">h</option>
+            </select>
+            <p>Convertir:</p>
+            <select id="unidadDestinoTiempo">
+                <option value="s">s</option>
+                <option value="mn">min</option>
+                <option value="h">h</option>
+            </select>
+            <br><br>
+            <button type="button" id="convertirBotonTiempo">Convertir</button>
+            <p id="resultadoTiempoDecimal"></p>
+            <p id="resultadoTiempoCientifica"></p>
+        </form>
+        <br>
+
+        <h2>Convertir Velocidad</h2>
+        <form id="convertirVelocidad">
+            <label for="valorVelocidad">Valor:</label>
+            <input type="number" id="valorVelocidad">
+            <select id="unidadOrigenVelocidad">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select>
+            <p>Convertir:</p>
+            <select id="unidadDestinoVelocidad">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select>
+            <br><br>
+            <button type="button" id="convertirBotonVelocidad">Convertir</button>
+            <p id="resultadoVelocidadDecimal"></p>
+            <p id="resultadoVelocidadCientifica"></p>
+        </form>
+        <br>
+    </section>
+
+    <section id="Comentarios">
+        
+        <h2>Deja tu comentario</h2>
+    
+        <form id="commentForm">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" required><br><br>
+            
+            <label for="comment">Comentario:</label><br>
+            <textarea id="comment" rows="4" cols="50" required></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+         
+    <script src="../js/comentarios.js"></script>
+
+    <footer>
+        <p>&copy; 2024 Proyecto de Física<br>Diego Arevalo - Andres Ramirez</br></p>
+    </footer>
+</body>
+</html>

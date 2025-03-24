@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento Uniforme</title>
+    <script src="../../js/movimientoUniforme.js"></script>
+    <link rel="stylesheet" href="../../css/styles2.css">
+    <link rel="stylesheet" href="../../css/styles_MU.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="menu">
+            <a href="../../index.html"><img src="../../img/matematicas.png" alt="Inicio" style="width: 20px; height: 20px;"></a>
+            <a href="conversionUnidades.html">Conversión Unidades</a>
+            <a href="movimientoUniforme.html">Movimiento Uniforme</a>
+            <a href="movimientoUniformeAcelerado.html">Movimiento Uniforme Acelerado</a>
+            <a href="caidaLibre.html">Caída Libre</a>
+            <a href="vectores.html">Vectores</a>
+    
+        </div>    
+</header>
+
+    <section id="presentacion">
+        <form id="datosMU">
+            <label for="datoFaltante">¿Qué dato deseas buscar?</label><br>
+            <select id="datoFaltante">
+                <option value="distancia">Distancia</option>
+                <option value="velocidad">Velocidad</option>
+                <option value="tiempo">Tiempo</option>
+            </select>
+        </form><br><br>
+    </section>
+
+    <section id="sectionVelocidad">    
+        <form id="calcularVelocidad">
+            <label for="distanciaMU">Distancia:</label><br>
+            <input type="number" id="distanciaMU">
+            <select id="unidadDistanciaVelocidad">
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select><br><br>
+
+            <label for="tiempoMU">Tiempo:</label><br>
+            <input type="number" id="tiempoMU">
+            <select id="unidadTiempoVelocidad">
+                <option value="s">s</option>
+                <option value="h">h</option>
+            </select><br><br>
+
+            <button type="button" id="calcularBotonVelocidad">Calcular Velocidad</button><br><br>
+            <p id="resultadoMU"></p>
+        </form>
+    </section>
+
+    <section id="sectionDistancia">
+        <form id="calcularDistancia">
+            <label for="velocidadDistancia">Velocidad:</label><br>
+            <input type="number" id="velocidadDistancia">
+            <select id="unidadVelocidadDistancia">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select><br><br>
+
+            <label for="tiempoDistancia">Tiempo:</label><br>
+            <input type="number" id="tiempoDistancia">
+            <select id="unidadTiempoDistancia">
+                <option value="s">s</option>
+                <option value="h">h</option>
+            </select><br><br>
+
+            <button type="button" id="calcularBotonDistancia">Calcular Distancia</button><br><br>
+            <p id="resultadoDistancia"></p>
+        </form>
+    </section>
+
+    <section id="sectionTiempo">
+        <form id="calcularTiempo">
+            <label for="distanciaTiempo">Distancia:</label><br>
+            <input type="number" id="distanciaTiempo">
+            <select id="unidadDistanciaTiempo">
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select><br><br>
+
+            <label for="velocidadTiempo">Velocidad:</label><br>
+            <input type="number" id="velocidadTiempo">
+            <select id="unidadVelocidadTiempo">
+                <option value="m/s">m/s</option>
+                <option value="km/h">km/h</option>
+            </select><br><br>
+
+            <button type="button" id="calcularBotonTiempo">Calcular Tiempo</button><br><br>
+            <p id="resultadoTiempo"></p>
+        </form>
+    </section>
+
+    
+
+
+
+    <section id="Comentarios">
+        <h2>Deja tu comentario</h2>
+    
+        <form id="commentForm">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" required><br><br>
+            
+            <label for="comment">Comentario:</label><br>
+            <textarea id="comment" rows="4" cols="50" required></textarea><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+         
+    <script src="../js/comentarios.js"></script>
+
+    
+    <footer>
+        <p>&copy; 2024 Proyecto de Física<br>Diego Arevalo - Andres Ramirez</br></p>
+    </footer>
+
+</body>
+</html>

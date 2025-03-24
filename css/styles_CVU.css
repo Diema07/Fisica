@@ -1,0 +1,113 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+   
+    margin: 100px auto; 
+    padding: 20px;
+    width: 30%;
+    background-color: #22272b ;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+input, select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #22272b;
+    color: #ddd;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #52fb18;
+    outline: none;
+    box-shadow: 0 0 8px 2px #52fb18;
+}
+
+button {
+    
+    width: 90%;
+    padding: 12px;
+    background-color: #333;
+    color: #52fb18;
+    border: 1px solid #52fb18;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #52fb18;
+    color: #1b1b1b;
+}
+
+p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Estilos para los resultados con efecto neón */
+#resultadoDistanciaDecimal, #resultadoDistanciaCientifica,
+#resultadoTiempoDecimal, #resultadoTiempoCientifica,
+#resultadoVelocidadDecimal, #resultadoVelocidadCientifica {
+    font-weight: bold;
+    font-size: 18px;
+    color: #52fb18;
+    text-shadow: 0 0 5px #52fb18;
+    text-align: center;
+}
+
+h2 {
+    
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+}
+
+
+
+#commentForm input, 
+#commentForm textarea {
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 90%; 
+    box-sizing: border-box; 
+    background-color: #141517;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #52fb18;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Hover and focus effects */
+input[type="number"]:hover, select:hover, textarea:hover {
+    border-color: #52fb18;
+    box-shadow: 0 0 5px 1px #52fb18;
+}

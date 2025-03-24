@@ -1,0 +1,75 @@
+body {
+    background-color:  #0e0e10;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+p {
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.fisica {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carta {
+    width: 200px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.carta:hover {
+    transform: scale(1.1);
+}
+
+.carta-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.carta-info h2 {
+    margin: 0;
+    font-size: 16px;
+}
+.carta-info:hover {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+
+}
+
+.carta-info p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
