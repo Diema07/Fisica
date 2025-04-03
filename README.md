@@ -9,12 +9,12 @@ Una aplicación web interactiva diseñada para ayudar a los estudiantes a compre
 
 ## Características
 
-- Conversión de Unidades: Explicación teórica y calculadora para convertir entre diferentes sistemas de medición.
-- Movimiento Uniforme: Explicación teórica y calculadora para determinar parámetros de un movimiento a velocidad constante.
-- Movimiento Uniformemente Acelerado: Explicación teórica y calculadora comprender movimientos con aceleración constante.
-- Caída Libre: Explicación teórica y calculadora para comprender la caída de objetos sin resistencia.
-- Vectores: Explicación teórica y calculadora para comprender sobre los vectores.
-- Comentarios: Sección de comentarios en cada calculadora.
+- **Conversión de Unidades:** Explicación teórica y calculadora para convertir entre diferentes sistemas de medición.
+- **Movimiento Uniforme:** Explicación teórica y calculadora para determinar parámetros de un movimiento a velocidad constante.
+- **Movimiento Uniformemente Acelerado:** Explicación teórica y calculadora comprender movimientos con aceleración constante.
+- **Caída Libre:** Explicación teórica y calculadora para comprender la caída de objetos sin resistencia.
+- **Vectores:** Explicación teórica y calculadora para comprender sobre los vectores.
+- **Comentarios:** Sección de comentarios en cada calculadora.
 
 ## Instalación
 
@@ -59,38 +59,38 @@ La aplicación está organizada en varios módulos temáticos que puedes acceder
 
 ¡Las contribuciones son bienvenidas! Este fué el primer proyecto que realizamos, los requerimientos eran basicos y se cumplieron. Si deseas aportar mejoras o nuevas funcionalidades a FÍsIca, sigue estos pasos:
 
-# 1. Fork del repositorio:
-# Haz un fork del repositorio en tu cuenta de GitHub.
+1. Fork del repositorio:
+Haz un fork del repositorio en tu cuenta de GitHub.
 
-# 2. Clonar tu fork:
+2. Clonar tu fork:
 ````bash
 git clone https://github.com/tuusuario/fisica.git
 ````
-# 3. Navegar al directorio del proyecto:
+3. Navegar al directorio del proyecto:
 ````bash
 cd fisica
 ````
 
-# 4. Crear una nueva rama para tu contribución:
+4. Crear una nueva rama para tu contribución:
 ````bash
 git checkout -b feature/nueva-funcionalidad
 ````
 
-# 5. Realizar los cambios en el código y guardarlos.
+5. Realizar los cambios en el código y guardarlos.
 
-# 6. Agregar y confirmar los cambios:
+6. Agregar y confirmar los cambios:
 ````bash
 git add .
 git commit -m "Descripción breve de los cambios realizados"
 ````
 
-# 7. Enviar la nueva rama a tu repositorio remoto:
+7. Enviar la nueva rama a tu repositorio remoto:
 ````bash
 git push origin feature/nueva-funcionalidad
 ````
 
-# 8. Crear un Pull Request en GitHub:
-# Ve a tu repositorio en GitHub, selecciona la rama que creaste y haz clic en "New Pull Request".
-# Describe los cambios y envía la solicitud para su revisión.
+8. Crear un Pull Request en GitHub:
+Ve a tu repositorio en GitHub, selecciona la rama que creaste y haz clic en "New Pull Request".
+Describe los cambios y envía la solicitud para su revisión.
 
 
