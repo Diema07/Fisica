@@ -12,7 +12,7 @@ app.post('/save-comment', (req, res) => {
     const newComment = req.body;
 
     // Leer comentarios existentes desde un archivo JSON
-    const commentsFilePath = path.join(__dirname, 'comments.json');
+    const commentsFilePath = path.join(__dirname, 'comentarios.json');
     fs.readFile(commentsFilePath, 'utf-8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo de comentarios:', err);
